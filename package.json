@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-ci",
+  "version": "1.0.0",
+  "description": "NodeJS gitlab CI/CD",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gitlab.com/omekov/nodejs-ci"
+  },
+  "keywords": [
+    "gitlab",
+    "ci",
+    "nodejs",
+    "express",
+    "docker"
+  ],
+  "author": "Omekov Azamat",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
