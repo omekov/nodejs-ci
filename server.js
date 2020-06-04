@@ -2,15 +2,14 @@
 
 const express = require("express");
 
-const port = 8008;
-const host = "0.0.0.0";
+const port = 8080;
 
 const app = express();
 app.get("/", (req, res) => {
   res.send("Hello Gitlab");
 });
 
-app.listen(port, host);
-console.log(`running on http://${host}:${port}`);
+app.listen(port);
+console.log(`running on :${port}`);
 
 module.exports.app = app;

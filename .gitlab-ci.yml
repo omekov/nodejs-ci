@@ -1,21 +1,7 @@
-image: node:latest
+# Official docker image.
+image: docker:latest
 
-stages:
-  - build
-  - test
-
-cache:
-  paths:
-    - node_modules/
-
-install_dependencies:
+build:
   stage: build
   script:
-    - npm install
-  artifacts:
-    paths:
-      - node_modules/
-
-testing_testing:
-  stage: test
-  script: npm test
+    - docker build -t test .

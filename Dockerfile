@@ -1,9 +1,10 @@
-FROM node:12
+FROM node:latest
+
 WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm install
 # RUN npm ci --only=production
 COPY . .
-EXPOSE 8008
+RUN npm test
 CMD [ "node", "server.js" ]
